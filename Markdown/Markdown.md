@@ -104,12 +104,13 @@ https://github.com/Max-GPT
 
 **两对星号 加粗**
 
-==两对等号 高亮==
-
 一对反引号 编写行内代码 `print()`
 
 <u>使用 u标签 显示下划线</u>
 
-引号 emoji代码 引号 ，显示emoji :smile:
+
+<mark>使用 mark标签 显示高亮文本</mark>
+
+引号: emoji代码 引号: ，显示emoji :smile:
 
 [^引用A]:这是一段脚注

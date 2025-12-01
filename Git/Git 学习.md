@@ -37,9 +37,9 @@ git remote -v
 
 这是因为 Git 记录远程仓库时，会把 “拉取地址” 和 “推送地址” 分开保存
 
-origin  https://github.com/Max-GPT/IT-Notes.git (fetch) 拉取地址
+`origin  https://github.com/Max-GPT/IT-Notes.git (fetch)` 拉取地址
 
-origin  https://github.com/Max-GPT/IT-Notes.git (push) 推送地址
+`origin  https://github.com/Max-GPT/IT-Notes.git (push)` 推送地址
 
 ### 7. 推送到Github
 ```

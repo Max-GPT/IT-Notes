@@ -1,6 +1,13 @@
 ## VSCode快捷键
 注释 Ctrl + /
 
+## 运算符
+```
+var a = 100
+console.log( ++a ) 先计算再输出 输出101
+console.log( a-- ) 先输出再计算 输出100
+```
+
 ## JavaScript 的引入方式
 ### 1. 内联
 ```

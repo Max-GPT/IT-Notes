@@ -175,3 +175,30 @@ null == undefined // true
 | C#         | ⚠ 仅 object[ ] 能混合 | 静态类型               |
 | C/C++      | ❌ 通常不允许          | 数组元素必须同一类型         |
 | Go         | ❌ 不允许            | 数组强类型，slice 也要一致类型 |
+
+数组排序 sort( )
+
+数组反转 reverse( )
+
+数组连接2数组 concat( )
+
+
+- JavaScript 的函数声明会被提升
+```
+function A() {
+  console.log("B");
+}
+
+A();
+
+function A() {
+  console.log("C");
+}
+```
+JS 的行为是：
+
+函数声明会被整体提升到作用域顶部，并且后声明的会覆盖前面的。
+
+最后输出是 C。
+
+- 数组复制

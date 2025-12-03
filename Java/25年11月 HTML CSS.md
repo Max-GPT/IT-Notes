@@ -12,3 +12,8 @@
 <a href="http://google.com/search?q=天气" target="_self">Google搜索天气</a>
 ```
 
+
+## 标签
+`<br>` 表示break line 换行
+
+`<hr>` horizontal rule（水平线）分隔符

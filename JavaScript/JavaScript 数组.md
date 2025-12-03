@@ -1,3 +1,23 @@
+## 数组有负数时候排序
+默认排序是按字符串，再按 Unicode 编码排序，会导致负数排序不正确
+```
+const arr = [3, -2, 10, -5, 0];
+arr.sort();
+console.log(arr); // [-2, -5, 0, 10, 3] ❌
+```
+比较函数
+```
+const arr = [3, -2, 10, -5, 0];
+
+// 升序
+arr.sort((a, b) => a - b);
+console.log(arr); // [-5, -2, 0, 3, 10]
+
+// 降序
+arr.sort((a, b) => b - a);
+console.log(arr); // [10, 3, 0, -2, -5]
+```
+
 ## 数组开头插入数据 `unshift( )`
 ```
 const arr = [2, 3, 4];

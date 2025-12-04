@@ -40,6 +40,18 @@
 const el = document.getElementById("myId");
 ```
 ##### 按 class 获取
+| 功能           | 方法                         | 返回类型           |
+| ------------ | -------------------------- | -------------- |
+| 按 id         | getElementById             | Element        |
+| 按 class      | getElementsByClassName     | HTMLCollection |
+| 按标签          | getElementsByTagName       | HTMLCollection |
+| CSS 选择器（第一个） | querySelector              | Element        |
+| CSS 选择器（全部）  | querySelectorAll           | NodeList       |
+| 子元素          | children                   | HTMLCollection |
+| 父元素          | parentNode / parentElement | Node           |
+| 下一个兄弟        | nextElementSibling         | Element        |
+| 查找最近祖先       | closest                    | Element        |
+
 
 
 

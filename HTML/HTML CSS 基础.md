@@ -14,6 +14,24 @@
 
 
 ## 标签
-`<br>` 表示break line 换行
+`<br>` → 换行 (break line)
 
-`<hr>` horizontal rule（水平线）分隔符
+`<hr>` → 分隔符 (horizontal rule) 水平线
+
+`<ul>` → 无序列表（unordered list）
+```
+<ul>
+  <li>苹果</li>
+  <li>香蕉</li>
+  <li>橘子</li>
+</ul>
+```
+`<ol>` → 有序列表（ordered list）
+```
+<ol>
+  <li>第一步</li>
+  <li>第二步</li>
+  <li>第三步</li>
+</ol>
+```
+`<li>` → 列表项（list item）

@@ -1,6 +1,24 @@
 ## VSCode快捷键
 注释 Ctrl + /
 
+## while do while
+先判断再执行
+```
+let i = 5;
+
+while (i < 5) {
+  console.log("执行了");
+}
+```
+先执行一次，再判断
+```
+let i = 5;
+
+do {
+  console.log("执行了");
+} while (i < 5);
+```
+
 ## for of & for in
 for of 每次得到的是元素本身
 ```

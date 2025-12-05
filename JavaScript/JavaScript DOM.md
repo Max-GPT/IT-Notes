@@ -1,3 +1,6 @@
+## 非活性化 不可选
+disable
+
 ## JavaScript DOM 动态 添加 / 删除元素
 | 操作           | 方法                           | 说明           |
 | ------------ | ---------------------------- | ------------ |
@@ -69,15 +72,15 @@ obj.value = "Hello World"
 改变样式 `.style='background-color:` 
 ```
 function changeColor(){
-            var allTrObj = document.getElementById('mailTboby').children
-            for (let index = 0; index < allTrObj.length; index++) {
-                if(index % 2==0){
-                    allTrObj[index].style='background-color: beige;'
-                }else{
-                    allTrObj[index].style='background-color: lightgrey;'
-                }
-            }
+    var allTrObj = document.getElementById('mailTboby').children
+    for (let index = 0; index < allTrObj.length; index++) {
+        if(index % 2==0){
+            allTrObj[index].style='background-color: beige;'
+        }else{
+            allTrObj[index].style='background-color: lightgrey;'
         }
+    }
+}
 ```
 
 ## 删除元素

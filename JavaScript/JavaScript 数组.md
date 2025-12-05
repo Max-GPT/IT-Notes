@@ -18,7 +18,7 @@ arr.sort((a, b) => b - a);
 console.log(arr); // [10, 3, 0, -2, -5]
 ```
 
-## 数组开头插入数据 `unshift( )`
+## 数组 开头插入 `unshift( )`
 ```
 const arr = [2, 3, 4];
 
@@ -32,7 +32,7 @@ console.log(arr); // [-1, 0, 1, 2, 3, 4]
 
 ```
 
-## 删除数组开头元素：`shift( )`
+## 数组 开头删除`shift( )`
 ```
 const arr = [1, 2, 3, 4];
 
@@ -41,18 +41,18 @@ console.log(first);         // 1
 console.log(arr);           // [2, 3, 4]
 ```
 
-## 结尾插入数据 `push( )`
+## 数组 末尾插入 `push( )`
 ```
 arr.push({ name: 'Alice', age: 19, gender: '女' });
 ```
 
-## 删除数组末尾元素 `pop()`
+## 数组 末尾删除 `pop()`
 ```
 const arr = [1, 2, 3, 4];
 const last = arr.pop();  // 删除末尾元素
 ```
 
-## 复制数组 `[...arr1]`
+## 数组复制 `[...arr1]`
 ```
 var arr1 = [1, 2, 3];
 var arr2 = [...arr1];
@@ -63,7 +63,7 @@ var arr2 = [...arr1];
 - sort( )
 - reverse( )
 
-## 拼接数组 `concat( )`
+## 数组拼接 `concat( )`
 ```
 var arr1 = [1, 2];
 var arr2 = [3, 4];

@@ -90,4 +90,64 @@ for (int i = 0; i < list.size(); i++) {
 
 
 ## <mark>HashMap</mark>
+键值对（key-value） 数据结构。
 
+钥匙 - 房间
+
+key 不能重复
+```
+Map<KeyType, ValueType> map = new HashMap<>();
+```
+### HashMap 最常用操作
+✔ `put( )` — 添加数据
+```
+Map<String, String> map = new HashMap<>();
+map.put("A001", "电脑");
+map.put("A002", "手机");
+```
+✔ `get()` — 根据 key 获取 value
+```
+String p = map.get("A001");
+System.out.println(p); // 输出：电脑
+```
+✔ `containsKey()` — 是否存在这个 key
+```
+if (map.containsKey("A001")) {
+    System.out.println("存在产品");
+}
+```
+✔ `remove()` — 删除元素
+```
+map.remove("A002");
+```
+
+✔ `size()` — 大小
+```
+map.size();
+```
+✔ `clear()` — 清空
+```
+map.clear();
+```
+
+### HashMap 遍历方法
+✔ 遍历 key 和 value（最常用）
+```
+for (Map.Entry<String, String> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + " = " + entry.getValue());
+}
+```
+
+✔ 遍历 key
+```
+for (String key : map.keySet()) {
+    System.out.println("Key: " + key);
+}
+```
+
+✔ 遍历 value
+```
+for (String value : map.values()) {
+    System.out.println("Value: " + value);
+}
+```

@@ -1,4 +1,48 @@
 ## 抽象类
+### 接口、抽象类、父类都可以用来声明变量（引用变量）
+Java 中，变量的类型可以是：接口、抽象类、普通父类、具体类。
+
+但 对象必须是一个具体类（能 new 的类）。
+
+“变量的类型，代表能使用什么功能（方法）”
+“对象的类型，代表真正实现这些功能的类”
+```
+// 接口声明变量
+List<String> list = new ArrayList<>();
+
+Runnable r = new Thread();
+```
+```
+// 抽象类可以声明变量
+abstract class Animal {}
+class Dog extends Animal {}
+
+Animal a = new Dog();
+```
+```
+// 普通父类可以声明变量
+class Person {}
+class Student extends Person {}
+
+Person p = new Student();
+```
+
+### 为什么设计成这样？
+为了实现 <mark>多态</mark> !
+```
+List list = new ArrayList<>();
+list = new LinkedList<>();
+list = new Vector<>();
+```
+- 这三行都 不会报错。
+- List 是接口，ArrayList / LinkedList / Vector 都实现了 List 接口
+- 所以一个 List 类型的变量可以引用任何实现 List 的对象。
+- “list 这个变量，只要求你是一个 List 类型的对象，具体用哪种实现随你。”
+- 但是反过来就不行（会报错）
+```
+ArrayList list = new LinkedList<>();  // ❌ 错误
+```
+- 因为 LinkedList 不是 ArrayList 的子类，它们是平级的实现类。
 
 ### 抽象类怎么用：
 1. 创建抽象类

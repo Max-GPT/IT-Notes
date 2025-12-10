@@ -2,10 +2,14 @@
 - Eclipse エクリプス
 
 ## 快速生成构造函数
-- 把光标放在类的花括号 {} 中
-- 按下 `Alt` + `Shift` + `S`（打开 “Source” 菜单）
-- 再按 `O`
-- 勾选要生成构造方法的字段
+按下：
+
+`Alt` + `Shift` + `S` → 再按 `O`
+
+## Eclipse 中快速生成 Getter / Setter 
+按下：
+
+`Alt` + `Shift` + `S` → 再按 `R`
 
 ## 快捷键
 `Ctrl` + `Shift` + `F` 格式化文档 代码

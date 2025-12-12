@@ -1,5 +1,68 @@
 ## 第一次 Git 上传流程
 
+## 　`origin`
+- GitLab 远程仓库 = 一个服务器
+- `origin` = 你电脑给这个服务器起的昵称（默认都叫 origin）
+- 当你执行 `git clone` 时
+- Git 默认把你克隆的那个远程仓库命名为 `origin`
+- 也可以改名
+```
+git remote rename origin gitlab
+```
+- 本地分支：`feature/ni_20251212`
+- 远程分支：`origin/feature/ni_20251212`
+
+## `git branch -a` 的输出
+- `git branch -a` 的输出太长
+- Git 会自动把结果丢给分页器（默认是 less）
+- 终端进了 less 分页器模式
+- 所以你看到 (END)，光标卡住不动
+
+退出:
+
+- `q`  最常用（quit）
+- `Ctrl + C`
+
+
+### Git 常用分支命名
+| 分支名称              | 类型       | 作用        | 说明                                      |
+| ----------------- | -------- | --------- | --------------------------------------- |
+| `main` / `master` | 主分支      | 稳定、可发布代码  | 一般只有测试通过的代码才合并到这里                       |
+| `dev`             | 开发分支     | 集中开发和集成   | 所有新功能先合并到 dev，测试稳定后再合并到 main            |
+| `feature/xxx`     | 功能分支     | 开发新功能     | 从 dev 分出，每个功能一个分支，开发完成后合并回 dev          |
+| `hotfix/xxx`      | 热修复分支    | 紧急修复      | 从 main 分出，修复完立即合并回 main 和 dev           |
+| `release/xxx`     | 发布分支     | 版本发布准备    | 从 dev 分出，进行测试和 bug 修复，稳定后合并回 main 和 dev |
+| `bugfix/xxx`      | Bug 修复分支 | 日常 bug 修复 | 通常从 dev 分出，修复后合并回 dev                   |
+
+```
+main ──────●────────●────────●─────────>（稳定发布）
+           \        \        \
+            \        \        \
+             dev ──●───●───●───>（开发集成）
+              \    \    \
+               \    \    \
+          feature/login  feature/cart  feature/profile
+
+```
+```
+       main
+        ●────────────●────────────●────────────> (稳定发布)
+        │            │
+        │            │
+       hotfix/h1   hotfix/h2
+        │            │
+        └───────┐    └───────┐
+                │            │
+                dev ──●────●────●────●───────────────> (开发集成)
+                 │    │              │            │
+                 │    │              │            │
+                 │   feature/login feature/cart feature/profile
+                 │
+                 release/v1.0
+                 │
+                 └─────────────> (合并回 main 和 dev)
+```
+
 ### 核心区域概念
 
 - 工作区（修改文件） → git add → 

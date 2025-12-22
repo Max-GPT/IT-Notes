@@ -1,5 +1,6 @@
 # Git命令
-[ArrayList](#ArrayList)
+- [查看分支](#查看分支)
+
 
 - git clone
 - git branch -a
@@ -8,6 +9,23 @@
 - git cheakout
 - clear
 
+## 查看分支
+#### 查看【本地分支】
+```
+git branch
+```
+#### 查看【远程分支】
+```
+git branch -r
+```
+#### 查看【本地 + 远程】
+```
+git branch -a
+```
+#### 查看当前分支和跟踪关系
+```
+git branch -vv
+```
 
 ## 本地分支 ≠ 远程分支 默认完全没有关系!
 - 即使名字一样，也不能自动同步。
